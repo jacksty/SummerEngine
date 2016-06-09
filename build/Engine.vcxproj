@@ -29,6 +29,7 @@
     <ClInclude Include="..\inc\Typedefs.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\HString.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\Managers\LogManager.cpp" />
     <ClCompile Include="..\src\stdafx.cpp">
