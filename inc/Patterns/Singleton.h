@@ -1,6 +1,5 @@
 #pragma once
 #include "stdafx.h"
-
 #include "Exception.h"
 
 template<class T>
@@ -8,7 +7,7 @@ class Singleton
 {
 protected:
 	static T* singletonPtr;
-	static std::mutex singletonMutex;
+	std::mutex singletonMutex;
 
 public:
 	Singleton()

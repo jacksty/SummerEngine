@@ -59,11 +59,11 @@ uint64 HString::hashFunction(const char* cstr)
 	
 	const uint32 wLength = len / 4;
 	const uint64 MOD_VAL = 4294967291; // largest 32-bit prime
-	const uint32* intString = (const uint32*)cstr;
+	const uint32* intString = reinterpret_cast<const uint32*>(cstr);
 
 	while (idx < wLength)
 	{
-		hash <<= 32; // shift previous result to clear room for next 4 chars
+		hash <<= 32; // shift previous result to clear room for next 4 bytes
 		hash |= intString[idx++]; // move the next for chars from cstr into the now-cleared section of hash and increment idx
 		hash %= MOD_VAL; // mod hash with MOD_VAL to create fingerprint
 	}
@@ -95,9 +95,9 @@ uint64 HString::getFingerprint() const
 }
 
 
-const std::string* HString::getString() const
+const std::string& HString::getString() const
 {
-	return &string;
+	return string;
 }
 
 

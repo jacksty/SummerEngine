@@ -20,7 +20,7 @@ LogManager::~LogManager()
 }
 
 
-void LogManager::log(std::string message, const uint16 flags)
+void LogManager::log(const std::string& message, const uint16 flags)
 {
 	singletonMutex.lock();
 	{

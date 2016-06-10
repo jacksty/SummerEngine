@@ -15,6 +15,7 @@ private:
 
 	// CONSTRUCTORS / DESTRUCTORS
 protected:
+public:
 	HString(const char* cstr);
 	~HString() {} // nothing special needs to be done here
 
@@ -36,6 +37,6 @@ public:
 	char operator[] (uint32 pos) const;
 	uint32 length() const;
 	uint64 getFingerprint() const;
-	const std::string* getString() const;
+	const std::string& getString() const;
 	const char* getCString() const;
 };
