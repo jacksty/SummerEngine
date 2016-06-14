@@ -19,16 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\inc\AABB.h" />
+    <ClInclude Include="..\inc\Components\TransformComponent.h" />
     <ClInclude Include="..\inc\Exception.h" />
     <ClInclude Include="..\inc\HString.h" />
-    <ClInclude Include="..\inc\Managers\HashManager.h" />
     <ClInclude Include="..\inc\Managers\LogManager.h" />
-    <ClInclude Include="..\inc\Object.h" />
     <ClInclude Include="..\inc\Patterns\Singleton.h" />
     <ClInclude Include="..\inc\stdafx.h" />
-    <ClInclude Include="..\inc\Typedefs.h" />
+    <ClInclude Include="..\inc\Types.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\AABB.cpp" />
+    <ClCompile Include="..\src\Components\TransformComponent.cpp" />
     <ClCompile Include="..\src\HString.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\Managers\LogManager.cpp" />
@@ -95,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -104,7 +106,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -115,7 +117,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
@@ -130,7 +132,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>

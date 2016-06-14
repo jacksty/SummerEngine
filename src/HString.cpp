@@ -11,6 +11,12 @@ HString::HString(const char* cstr) :
 
 // METHODS
 
+void HString::reinitialize(const char* cstr)
+{
+	string = cstr;
+	fingerprint = hashFunction(cstr);
+}
+
 bool HString::operator== (const HString& rhs) const
 {
 	return fingerprint == rhs.getFingerprint();
