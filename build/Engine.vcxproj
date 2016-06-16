@@ -23,7 +23,9 @@
     <ClInclude Include="..\inc\Components\TransformComponent.h" />
     <ClInclude Include="..\inc\Exception.h" />
     <ClInclude Include="..\inc\HString.h" />
+    <ClInclude Include="..\inc\Managers\InputManager.h" />
     <ClInclude Include="..\inc\Managers\LogManager.h" />
+    <ClInclude Include="..\inc\Managers\PhysicsManager.h" />
     <ClInclude Include="..\inc\Patterns\Singleton.h" />
     <ClInclude Include="..\inc\stdafx.h" />
     <ClInclude Include="..\inc\Types.h" />

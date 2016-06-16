@@ -35,20 +35,20 @@ bool HString::operator== (const char* rhs) const
 }
 
 
-int32 HString::compare(const HString& other) const
+int HString::compare(const HString& other) const
 {
 	uint64 tmp = other.getFingerprint();
 	return fingerprint == tmp ? 0 : (fingerprint > tmp ? 1 : -1);
 }
 
 
-int32 HString::compare(const std::string& other) const
+int HString::compare(const std::string& other) const
 {
 	return string.compare(other);
 }
 
 
-int32 HString::compare(const char* other) const
+int HString::compare(const char* other) const
 {
 	return string.compare(other);
 }
@@ -89,7 +89,7 @@ char HString::operator[](uint32 idx) const
 }
 
 
-uint32 HString::length() const
+size_t HString::length() const
 {
 	return string.length();
 }
@@ -104,10 +104,4 @@ uint64 HString::getFingerprint() const
 const std::string& HString::getString() const
 {
 	return string;
-}
-
-
-const char* HString::getCString() const
-{
-	return string.c_str();
 }

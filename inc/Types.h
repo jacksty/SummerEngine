@@ -147,6 +147,7 @@ matrix4x4 operator*(matrix4x4& a, matrix4x4& b)
 
 		c.set(i, val);
 	}
+	return c;
 }
 void operator*=(matrix4x4& a, matrix4x4& b)
 {

@@ -4,9 +4,9 @@
 
 int main()
 {
-	LogManager* lm = new LogManager("EngineLog.txt");
-	
+	new LogManager("EngineLog.txt");
 
+	delete LOG_MANAGER;
 
 	return 0;
 }

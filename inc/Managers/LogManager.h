@@ -35,12 +35,6 @@ public:
 	/// Prints message to log file if not caught by filter.
 	void log(const std::string& message, const uint16 flags = LL_NORMAL);
 
-	/// Prints message to log file if not caught by filter.
-	inline void log(const HString& message, const uint16 flags = LL_NORMAL)
-	{
-		log(message.getString(), flags);
-	}
-
 	/// Set the filter to a different set of flags. Messages are printed if appropriate flag is 1.
 	void setLogFilter(const uint16 allowed = LL_ALL);
 };
