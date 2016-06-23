@@ -3,16 +3,12 @@
 #include "Singleton.h"
 #include "HString.h"
 
-#define LOG_MANAGER LogManager::getSingletonPtr()
+#define LOG_MANAGER LogManager::GetSingletonPtr()
 #define LOG_EXCEPTION(ex) LOG_MANAGER->log(ex.getString(), LL_ERROR);
-
-
 
 
 class LogManager final : public Singleton<LogManager>
 {
-	friend class Singleton<LogManager>;
-
 	// CONSTANTS
 public:
 	static const uint16 LL_NONE = 0x0;
