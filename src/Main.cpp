@@ -4,9 +4,9 @@
 
 int main()
 {
-	new LogManager("EngineLog.txt");
+	LogManager::Startup();
+	
 
-	delete LOG_MANAGER;
-
+	LogManager::Shutdown();
 	return 0;
 }

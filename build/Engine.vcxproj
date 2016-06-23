@@ -101,6 +101,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -110,6 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>..\inc\;..\inc\Managers\;..\inc\Patterns\;..\inc\Components\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

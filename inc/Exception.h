@@ -18,7 +18,7 @@ public:
 	}
 
 public:
-	std::string getString()
+	inline std::string getString()
 	{
 		std::stringstream stringBuilder;
 		stringBuilder << "'" << description << "; [" << fileName << "@" << line << "]";
