@@ -2,16 +2,19 @@
 #include "stdafx.h"
 #include "Singleton.h"
 
+namespace SE
+{
 #define PHYSICS_MANAGER PhysicsManager::getSingletonPtr();
 #define GLOBAL_DELTA_TIME PhysicsManager::getDeltaTime();
 
-class PhysicsManager final : Singleton<PhysicsManager>
-{
-	// CONSTANTS
-	// ATTRIBUTES
-private:
-	static float64 deltaTime;
+	class PhysicsManager final : Singleton<PhysicsManager>
+	{
+		// ATTRIBUTES
+	private:
+		static float64 DeltaTime;
 
-public:
-	static float64 getDeltaTime() { return deltaTime; }
-};
+		// METHODS
+	public:
+		static float64 GetDeltaTime() { return DeltaTime; }
+	};
+}

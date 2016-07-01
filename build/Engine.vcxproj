@@ -19,23 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\inc\AABB.h" />
-    <ClInclude Include="..\inc\Components\TransformComponent.h" />
-    <ClInclude Include="..\inc\Exception.h" />
+    <ClInclude Include="..\inc\Assert.h" />
     <ClInclude Include="..\inc\HString.h" />
-    <ClInclude Include="..\inc\Managers\InputManager.h" />
     <ClInclude Include="..\inc\Managers\LogManager.h" />
+    <ClInclude Include="..\inc\Managers\MemoryManager.h" />
     <ClInclude Include="..\inc\Managers\PhysicsManager.h" />
     <ClInclude Include="..\inc\Patterns\Singleton.h" />
+    <ClInclude Include="..\inc\StackAllocator.h" />
     <ClInclude Include="..\inc\stdafx.h" />
     <ClInclude Include="..\inc\Types.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\AABB.cpp" />
-    <ClCompile Include="..\src\Components\TransformComponent.cpp" />
     <ClCompile Include="..\src\HString.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\Managers\LogManager.cpp" />
+    <ClCompile Include="..\src\Managers\MemoryManager.cpp" />
+    <ClCompile Include="..\src\StackAllocator.cpp" />
     <ClCompile Include="..\src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

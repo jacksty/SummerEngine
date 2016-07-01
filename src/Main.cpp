@@ -1,12 +1,14 @@
 #include "stdafx.h"
 
 #include "LogManager.h"
+#include "StackAllocator.h"
 
 int main()
 {
-	LogManager::Startup();
+	SE::LogManager::Startup();
 	
 
-	LogManager::Shutdown();
+	
+	SE::LogManager::Shutdown();
 	return 0;
 }
